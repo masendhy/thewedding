@@ -1,0 +1,71 @@
+@mixin box-shadow($shadows...){
+    box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	-o-box-shadow: $shadows;
+}
+
+@mixin border-radius($radius...){
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin box-sizing($box...){
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    -o-box-sizing: $box;
+}
+
+@mixin gradient($gradient...){
+	background-image: -moz-linear-gradient($gradient);
+	background-image: -webkit-linear-gradient($gradient);
+	background-image: -ms-linear-gradient($gradient);
+}
+
+@mixin transition($transition...){
+	transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+}
+
+@mixin scale($size){
+	-moz-transform: scale($size);
+    -webkit-transform: scale($size);
+  	transform: scale($size);
+}
+
+@mixin image-fit($position){
+	object-fit: cover;
+	object-position: $position;
+}
+
+@mixin grayscale($value){
+	filter: grayscale($value);
+	-webkit-filter: grayscale($value);
+}
+
+@mixin filter($filter...){
+	-webkit-filter: $filter;
+	-moz-filter: $filter;
+	-o-filter: $filter;
+	-ms-filter: $filter;
+	filter: $filter;
+}
+
+@mixin animation($animation...){
+	-webkit-animation: $animation;
+	-moz-animation: $animation;
+	-ms-animation: $animation;
+	animation: $animation;
+}
+
+@mixin circle($length: null) {
+    @if ($length) {
+		width: $length;
+		height: $length;
+    }
+    @include border-radius(100%);
+}

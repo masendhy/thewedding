@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel|PT+Sans:400,400i,700,700i|Parisienne');
+
+.font{
+    &--2{
+        font-family: 'Parisienne', cursive;
+    }
+    &--3{
+        font-family: 'Grand Hotel', cursive;
+    }
+}
+
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+
+.spacing--{
+    &1{
+        letter-spacing: .2em;
+    }
+    &2{
+        letter-spacing: .5em;
+    }
+}
+
+h1{
+    font-size: 80px;
+    @media screen and(max-width: $breakpoint--xs){
+        font-size: 40px;
+    }
+}
+h3{
+    font-size: 30px;
+    @media screen and(max-width: $breakpoint--xs){
+        font-size: 20px;
+    }
+}
+h4{
+    font-size: 25px;
+    @media screen and(max-width: $breakpoint--xs){
+        font-size: 18px;
+    }
+}
+h5{
+    font-size: 18px;
+    line-height: 1.7em;
+    @media screen and(max-width: $breakpoint--xs){
+        font-size: 16px;
+    }
+}
+h6{
+    line-height: 1.7em;
+}

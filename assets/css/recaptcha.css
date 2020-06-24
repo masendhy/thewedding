@@ -1,0 +1,22 @@
+/*
+/* !----------------------------------------------------------
+/* LEVIDIO MOCKUP - Wedding 3
+/* Oct, 22 2018
+/* Rootpixel
+/* !----------------------------------------------------------
+*/
+#rc-imageselect, .g-recaptcha {
+		transform:scale(0.7);
+		-webkit-transform:scale(0.7);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
+	}
+
+@media screen and (max-width: 480px) {
+	#rc-imageselect, .g-recaptcha {
+		transform:scale(0.8);
+		-webkit-transform:scale(0.8);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
+	}
+}

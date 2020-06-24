@@ -1,0 +1,348 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: color('softwhite');
+    line-height: 1.7em;
+    font-size: 16px;
+    color: color('dusk');
+    @media screen and(max-width: $breakpoint--xs){
+        font-size: 14px;
+    }
+    &.boxed{
+        background: url('../img/bg.jpg')repeat;
+        header, section, footer{
+            width: 1200px;
+            max-width: 100%;
+            margin: 0 auto;
+            @include box-shadow(5px 0 100px -5px transparentize(color('dusk'),.6));
+            .container{
+                width: 90%;
+            }
+        }
+    }
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 0;
+    color: color('white');
+    @include transition(0.3s all ease);
+    &:after{
+        content: '';
+        width: 700px;
+        height: 2px;
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        margin-left: -(700px/2);
+        background-color: color('white');
+        @media screen and(max-width: $breakpoint--lg){
+            width: 300px!important;
+            margin-left: -(300px/2);
+        }
+        @media screen and(max-width: $breakpoint--sm){
+            width: 100px!important;
+            margin-left: -(100px/2);
+        }
+        @media screen and(max-width: $breakpoint--xs){
+            display: none;
+        }
+    }
+    .logo{
+        line-height: 1.2em!important
+    }
+    .share{
+        position: relative;
+        padding: 5px 15px;
+        display: inline-block;
+        border: 2px solid color('white');
+        cursor: pointer;
+        .separator{
+            width: 0;
+            display: inline-block;
+            @include transition(width .5s ease);
+            &.toggled{
+                width: 60px;
+                @include transition(width .5s ease);
+            }
+        }
+        .share-social{
+            display: none;
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            a{
+                @extend .fade;
+                &:hover{
+                    opacity: .6;
+                    text-decoration: none;
+                }
+                img{
+                    margin-left: 3px;
+                    height: 20px!important;
+                }
+            }
+        }
+    }
+    &.nav--peach{
+        background-color: transparentize($color: color('orange'), $amount: .05);
+        @include transition(0.3s all ease);
+    }
+}
+
+header{
+    padding: 40px 0;
+    background: url('../img/header-bg.jpg')center center no-repeat;
+    background-size: cover;
+    width: 100%;
+	height: calc(100vh + 130px);
+    color: color('white');
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background: url('../img/header-bottom.png')center center no-repeat;
+        background-size: cover;
+    }
+    .header--content{
+        position: relative;
+        top: 40%;
+        @media screen and(max-width: $breakpoint--xs){
+            top: 50%;
+        }
+        .header--img{
+            position: relative;
+            left: -30px;
+            @media screen and(max-width: $breakpoint--xs){
+                left: 0;
+            }
+        }
+        .header--date{
+            position: relative;
+            top: -30px;
+            @media screen and(max-width: $breakpoint--xs){
+                top: 0;
+            }
+        }
+    }
+}
+section{
+    padding: 80px 0;
+}
+.container{
+    width: 1100px;
+    @media screen and(max-width: $breakpoint--md){ 
+        max-width: 96%!important;
+    }
+}
+
+#bride-groom{
+    position: relative;
+    padding-bottom: 0;
+    .header--flower{
+        position: absolute;
+        left: 50%;
+        top: -70px;
+        margin-left: -125px;
+    }
+    .center--line{
+        position: absolute;
+        right: -2px;
+        top: -50px;
+        width: 2px;
+        height: calc(100% + 50px);
+        background: url('../img/center-line.svg');
+        opacity: .6;
+        @media screen and(max-width: $breakpoint--md){ 
+            right: -5px;
+        }
+    }
+}
+
+#date{
+    background: url('../img/date-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 0;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background: url('../img/ornament-bottom.png') center center no-repeat;
+        background-size: cover;
+    }
+    .date--wrapper{
+        margin-top: 80px;
+        position: relative;
+        bottom: -40px;
+        background-color: color('white');
+        @include border-radius(10px);
+        @include box-shadow(0 50px 80px transparentize(color('peach'), .75));
+        .date--content{
+            padding: 50px;
+            .dot{
+                background-color: color('peach');
+                margin: 0 auto 30px;
+                @include circle(20px);
+            }
+            .wedding--date{
+                position: relative;
+                top: -15px;
+            }
+            .date--img{
+                height: 50px;
+                display: block;
+                margin: 0 auto 20px;
+            }
+            &.content--sm{
+                @media screen and(max-width: $breakpoint--sm){
+                    padding: 30px;
+                }
+            }
+        }
+        .hr--line{
+            width: 100%;
+            height: 1px;
+            opacity: .5;
+            background: url('../img/hr-line.svg')repeat-x;
+        }
+        .vr--line{
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: .5;
+            background: url('../img/vr-line.svg')repeat-y;
+        }
+    }
+}
+
+#gallery-rsvp{
+    background: url('../img/gallery-bg.jpg')no-repeat bottom center;
+    background-size: cover;
+    padding-bottom: 0;
+    #gallery{
+        .picture{
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            margin-bottom: 30px;
+            @include transition(background 1s ease);
+            @include box-sizing(border-box);
+            @include border-radius(15px);
+            @include box-shadow(0 25px 60px transparentize(color('black'),.8));
+            &:hover{
+                cursor: pointer;
+                .thumb img{
+                    @include scale(1.2);
+                }
+            }
+            .thumb{
+                position: absolute;
+                top: 0;
+                left: 0;
+                img{
+                    width: 100%;
+                    height: 280px;
+                    position: relative;
+                    @include transition(all 1s ease);
+                    @include border-radius(15px);
+                    @extend .fit-center;
+                }
+            }
+            .overlay{
+                background: url('../img/gallery-overlay.png')repeat-x;
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                .caption{
+                    position: absolute;
+                    color: color('white');
+                    bottom: 20px;
+                    left: 25px;
+                    h4, p{
+                        margin-bottom: 0;
+                    }
+                    p{
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+    }
+    #rsvp{
+        .btn--rsvp{
+            background-color: color('orange');
+            color: color('white');
+            padding: 15px;
+            font-weight: bold;
+            @include box-shadow(0 20px 50px transparentize(color('orange'),.5));
+            @extend .fade;
+            &:hover{
+                @include box-shadow(0 20px 50px transparentize(color('orange'),.2));
+            }
+        }
+    }
+    #maps{
+        position: relative;
+        bottom: -70px;
+        margin-top: -30px;
+        overflow: hidden;
+        border-radius: 50%;
+        height: 330px;
+        @include border-radius(15px);
+        @include box-shadow(0 25px 80px transparentize(color('black'),.7));
+        iframe{
+            width: 100%;
+            height: 100%;
+            @include border-radius(15px);
+        }
+    }
+}
+
+footer{
+    background-color: color('midnight');
+    padding: 120px 0 30px;
+    .footer--bride{
+        display: inline-block;
+        position: relative;
+        &:before, &:after{
+            content: '';
+            width: 80px;
+            height: 1px;
+            background-color: color('medwhite');
+            position: absolute;
+            top: 25px;
+            @media screen and(max-width: $breakpoint--xs){
+                width: 30px;
+            }
+        }
+        &:before{
+            left: -120px;
+            @media screen and(max-width: $breakpoint--xs){
+                left: -50px;
+            }
+        }
+        &:after{
+            right: -120px;
+            @media screen and(max-width: $breakpoint--xs){
+                right: -50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"name": "levidio-mockup/hd-book-1",
+	"description": "Levidio Mockup Book 1.",
+	"keywords": ["Levidio Mockup", "Levidio Mockup Book 1", "Mockup", "Levidio"],
+	"license": "",
+	"type": "template",
+	"require": {
+		"flatbase/flatbase": "^0.4.1",
+		"google/recaptcha": "^1.2",
+		"phpmailer/phpmailer": "^6.0",
+		"vlucas/phpdotenv": "^2.5"
+	},
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true
+}
