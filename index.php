@@ -223,7 +223,7 @@ Version : v1.0
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2 my-auto">
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/RG1llY1kxYg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/3cJLNsKicH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -292,7 +292,7 @@ Version : v1.0
                                 <div class="overlay">
                                     <div class="caption">
                                         <h5 class="text-uppercase bold italic">Pemberkatan</h5>
-                                        <p class="bold italic">Gereja San Atonius Condong Catur</p>
+                                        <p class="bold italic">Gereja Santo Yusuf Pekerja Condong Catur</p>
                                     </div>
                                 </div>
                             </div>
