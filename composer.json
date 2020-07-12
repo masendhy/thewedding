@@ -1,13 +1,13 @@
 {
-	"name": "levidio-mockup/hd-book-1",
-	"description": "Levidio Mockup Book 1.",
-	"keywords": ["Levidio Mockup", "Levidio Mockup Book 1", "Mockup", "Levidio"],
+	"name": "heejra wedding",
+	"description": "heejra wedding template",
+	"keywords": ["heejra wedding", "heejra wedding invitation", "heejra", "invitation"],
 	"license": "",
 	"type": "template",
 	"require": {
 		"flatbase/flatbase": "^0.4.1",
 		"google/recaptcha": "^1.2",
-		"phpmailer/phpmailer": "^6.0",
+		"phpmailer/phpmailer": "~6.1",
 		"vlucas/phpdotenv": "^2.5"
 	},
     "config": {

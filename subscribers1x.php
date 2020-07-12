@@ -1,8 +1,8 @@
 <?php
 /**
- * @author      Rootpixel
- * @copyright   (C) 2018 - Rootpixel. All rights reserved.
- * @link        https://rootpixel.net
+ * @author      Heejra
+ * @copyright   (C) 2020 - Heejra. All rights reserved.
+ * @link        https://heejra.net
  */
 // load the core script
 require __DIR__.'/core.php';
@@ -15,26 +15,26 @@ if (getenv('APP_ENV') == 'production') {
 }
 ?>
 <!--
-Levidio Lorem Ipsum
-http://rootpixel.co.id/levidio/
-Template name: Wedding 1
-Order at: http://rootpixel.co.id/levidio/
-Author: Rootpixel
-Website: http://www.rootpixel.net/
-Contact: support@rootpixel.net
-Social: http://facebook.com/rootpixel
+Heejra Wedding Website
+http://heejra.co.id/heejra/
+Template name: Wedding Invitation
+Order at: http://heejra.co.id/wedding invitation/
+Author: Heejra
+Website: http://www.heejra.net/
+Contact: support@heejra.net
+Social: http://facebook.com/heejra
 Version : v1.0
 -->
 <!DOCTYPE html>
 <!--
-Levidio Lorem Ipsum
-http://rootpixel.co.id/levidio/
-Template name: Wedding 1
-Order at: http://rootpixel.co.id/levidio/
-Author: Rootpixel
-Website: http://www.rootpixel.net/
-Contact: support@rootpixel.net
-Social: http://facebook.com/rootpixel
+Heejra Wedding Website
+http://heejra.co.id/heejra/
+Template name: Wedding Invitation
+Order at: http://heejra.co.id/wedding invitation/
+Author: Heejra
+Website: http://www.heejra.net/
+Contact: support@heejra.net
+Social: http://facebook.com/heejra
 Version : v1.0
 -->
 <html lang="en">
@@ -44,7 +44,7 @@ Version : v1.0
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" CONTENT="noindex, nofollow">
-    <title>Levidio Invitation - Wedding 3</title>
+    <title>Wedding Invitation</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -132,7 +132,7 @@ Version : v1.0
     <div class="container">
         <div class="row mb-0">
             <div class="col-md-5 col-sm-5 col-5 text-right my-auto">
-                <p class="mb-0 logo bold italic float-left">SMITH & JANE <br> WEDDING</p>
+                <p class="mb-0 logo bold italic float-left">David & Thalia <br> PERNIKAHAN</p>
             </div>
         </div>
     </div>
@@ -145,7 +145,7 @@ Version : v1.0
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h3 class="color--tosca text-center">Here's Your Subscriber List</h3>
+                    <h3 class="color--tosca text-center">Daftar Hadir Tamu</h3>
                 </div>
             </div>
             <div class="row mt-5">
@@ -190,7 +190,7 @@ Version : v1.0
                                 }else{ #you don't have at least 1 subscriber
                                 ?>
                                 <tr>
-                                    <td colspan="5" class="text-center">You don't have any subscriber yet.</td>
+                                    <td colspan="5" class="text-center">belum ada tamu yang akan menghadiri pesta</td>
                                 </tr>
                                 <?php
                             }
